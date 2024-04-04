@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root {
+  height: 100%;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(139.73deg,#bcd6d8,#f3efff);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center bottom;
   display: flex;
   flex-direction: column;
+  color: #fff;
+}
+
+.body .header {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  height: 54px;
+  padding: 0 20px;
+  flex: 0 0 54px;
+  box-shadow: 0 0.05rem 0.4rem #282828;
+  background: #ceebee;
+  box-sizing: border-box;
+}
+
+
+
+.body .header .header-top {
+  display: flex;
+  align-items: center;
+  padding: .5rem .6rem;
+  border-radius: .7rem;
+  background: #8f76d7;
+  box-shadow: 0 0.25rem 0.9rem #0000000f;
+}
+.body .header .header-top .header-top-image {
+  width: 20px;
+  margin-right: 10px;
+}
+
+
+.body .content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.body .content .content-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  border-radius: 10px;
+  background: transparent;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  border: 1px solid #2e9cea;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body .content .content-body .content-body-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
 }
+.body .content .content-body .content-body-content span{
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 18px;
+}
+
